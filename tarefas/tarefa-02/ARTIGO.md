@@ -401,9 +401,14 @@ com a comunidade.
 Bibliografia
 ----
 https://elixir-lang.org
+
 https://pragprog.com/book/elixir13/programming-elixir-1-3
+
 https://elixirschool.com/pt/lessons/basics/pipe-operator/
+
 https://speakerdeck.com/volcov/elixir-quem-e-este-pokemon
+
 http://courseware.codeschool.com/try_elixir/slides/CodeSchool-TryElixir.pdf
+
 https://dockyard.com/blog/2016/08/16/The-minumum-knowledge-you-need-to-start-metaprogramming-in-Elixir
 http://theerlangelist.com/article/macros_1
