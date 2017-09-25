@@ -388,27 +388,22 @@ Resultado de 5 - 1: 4
 Conclusão
 ----
 
+Elixir é uma linguagem recente mas que opera sobre uma base bem consolidada que é a Erlang criada pela Ericson em 1986 com o
+desafio de operar em ambientes de telecomunicações que exige uma alta disponibilidade e tolerância a falhas.
+
+Além disso por ser funcional e com uma legibilidade e redigibilidade boa tem ganho alguns adeptos inclusive por uma comunidade que vem surgindo em torno do framework web Phoenix(http://phoenixframework.org/).
+
+Seu modelo de concorrência é basead em Actors que funciona de maneira totalmente independente quando comparado as Thread, já que nele não há compartilhamento de memória. Cada Actor é um nó independente dos demais.
+
+A versão 1.0 oficial em Setembro de 2014, então ainda é um bom momento para investir tempo em aprender e contribuir
+com a comunidade.
 
 Bibliografia
 ----
 https://elixir-lang.org
+https://pragprog.com/book/elixir13/programming-elixir-1-3
 https://elixirschool.com/pt/lessons/basics/pipe-operator/
 https://speakerdeck.com/volcov/elixir-quem-e-este-pokemon
 http://courseware.codeschool.com/try_elixir/slides/CodeSchool-TryElixir.pdf
 https://dockyard.com/blog/2016/08/16/The-minumum-knowledge-you-need-to-start-metaprogramming-in-Elixir
 http://theerlangelist.com/article/macros_1
-
-
-
-
-(Não é necessário seguir a estrutura a seguir...)
-
-# Introdução
-
-# Origens e Influências
-
-# Classificação
-
-# Avaliação Comparativa
-
-# Conclusão
