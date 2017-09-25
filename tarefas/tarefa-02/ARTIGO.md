@@ -108,7 +108,7 @@ iex(3)> 2 = a
 Pode-se perceber que o operador match realiza atribuições quando o lado esquerdo é uma variável.
 Em casos que não se queira essa reassociação é possível usar o operador `pin`: __^__:
 
-```
+```elixir
 iex(3)> x = 1
 1
 iex(4)> ^x = 3
@@ -139,7 +139,7 @@ A grosso modo pode-se encarar como uma constante cujo o nome é seu valor.
 
 Usando o conhecimento de Pattern Matching  podemos reescrever o código acima como o a seguir:
 
-```
+```elixir
 defmodule Calculadora do
 	def faz_operacao(a,b, :soma) do
  			a + b
@@ -157,7 +157,7 @@ Calculadora.faz_operacao(20, 10, :subtracao) |> IO. puts
 Em linguagens funcionais como a Elixir o uso do condicional if é menos comum que outras linguagens.
 Podemos continuar explorando exemplos maiores como o cálculo de Fibonnaci:
 
-```
+```elixir
 defmodule Calculadora do
 	def fibonnacci(0) do
  		0
@@ -217,32 +217,32 @@ Pode-se verificar essas estruturas internas com a função __quote__:
 ```elixir
 iex(1)> quote do: 1+2
 {:+, [context: Elixir, import: Kernel], [1, 2]}
-
+```
 Durante a compilação todo o nosso código será tranformado em um __AST__ antes de produzir um bytecode.
 Entretanto existem 5 literais que irão continuar no mesmo formato:
 
 1)Número(floats e integers):
-```
+```elixir
 iex(5)> quote do: 1
 1
-
-2)Átomo:
 ```
+2)Átomo:
+```elixir
 iex(6)> quote do: :adicao
 :adicao
 ```
 3)List
-```
+```elixir
 iex(7)> quote do: [1,2,3]
 [1, 2, 3]
 ```
 4)String
-```
+```elixir
 iex(8)> quote do: "Uerj"
 "Uerj"
 ```
 5)Tuplas(com dois elementos)
-```
+```elixir
 iex(9)> quote do: {"Elixir",:funcional}      
 {"Elixir", :funcional}
 ```
@@ -254,7 +254,7 @@ Em algumas linguagens como __Python__ o nome dela é __eval()_.
 
 Observe o exemplo:
 
-```
+```elixir
 iex(19)> operando = 10
 10
 
@@ -299,7 +299,7 @@ Resultado de 2*5: 10
 Busca-se portando uma emplementação que quando a chamada __Calculadora.debug(1+2)__, o bytecode gerado corresponda
 a alguma coisa como:
 
-```
+```elixir
 resultado = 1+2
 Calculadora.print("1+2", resultado)
 resultado
@@ -329,7 +329,7 @@ end
 Então quando é chamado ``` Calculadora.debug(1+2)```, a macro __debug__ que é um função não irá receber __3__.
 Em vez disso, receberia: ```quote do: 1+2```que relembrando é a tupla:
 
-```
+```elixir
 {:+, [context: Elixir, import: Kernel], [1, 2]}
 
 ```
