@@ -6,7 +6,7 @@ Sobre
 
 Elixir é uma linguagem de programação funcional, que roda sobre a Erlang VM, criada em __2012__ com o objetivo de servir à construção de sistemas escaláveis e sustentáveis. 
 
-Seu criador é o brasileiro [José Valim] (https://github.com/josevalim) que foi um committer do projeto [Ruby on Rails](http://rubyonrails.org/) lidando com a parte de concorrência do framework.
+Seu criador é o brasileiro José Valim (https://github.com/josevalim) que foi um committer do projeto [Ruby on Rails](http://rubyonrails.org/) lidando com a parte de concorrência do framework.
 
 A proximidade do criador com o Ruby teve influência direta na sintaxe da linguagem, que é ponto
 mais amigável do que a Erlang que é a sua base.
@@ -375,7 +375,7 @@ end
 Main.test
 ```
 
-O resultada da execução é:
+O resultado da execução é:
 
 ```
 $ elixir teste7.exs 
