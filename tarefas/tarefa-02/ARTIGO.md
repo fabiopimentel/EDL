@@ -1,7 +1,5 @@
 ![Elixir Banner](imagens/elixir-banner.png)
 
-Elixir 
-====
 
 Sobre 
 ---
@@ -321,7 +319,7 @@ defmodule Calculadora do
 	end
 
 	def print(string_representation, result) do
-    	IO.puts "Resultado de #{string_representation}: #{result}"
+    		IO.puts "Resultado de #{string_representation}: #{result}"
   	end
 end
 
@@ -384,10 +382,21 @@ $ elixir teste7.exs
 Resultado de 1 + 2: 3
 Resultado de 1 * 2: 2
 Resultado de 5 - 1: 4
-``
+```
 
 
+Conclusão
+----
 
+
+Bibliografia
+----
+https://elixir-lang.org
+https://elixirschool.com/pt/lessons/basics/pipe-operator/
+https://speakerdeck.com/volcov/elixir-quem-e-este-pokemon
+http://courseware.codeschool.com/try_elixir/slides/CodeSchool-TryElixir.pdf
+https://dockyard.com/blog/2016/08/16/The-minumum-knowledge-you-need-to-start-metaprogramming-in-Elixir
+http://theerlangelist.com/article/macros_1
 
 
 
