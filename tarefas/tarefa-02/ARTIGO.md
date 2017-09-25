@@ -14,7 +14,7 @@ mais amigável do que a Erlang que é a sua base.
 As suas características principais são:
 
 1) __Funcional__ - Functions e Modules, não existem objetos ou classes.
-2) __Dinâmica - Tipos são checados na execução
+2) __Dinâmica__ - Tipos são checados na execução
 3) __Compilada__ - Código fonte são transformados em bytecodes que rodam sobre a Erlang VM.
 4) __Concorrência e Paralelismo__ - Usando o modelo de Actors
 
