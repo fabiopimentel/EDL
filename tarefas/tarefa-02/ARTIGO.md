@@ -64,7 +64,7 @@ Visando a legibilidade do código em situações como a seguir:
 foo(bar(baz(nova_funcao(outra_funcao()))))
 ```
 
-É possível realizar a mesma expessão usando o operador pipe que é representado por __|>__.
+É possível realizar a mesma expressão usando o operador pipe que é representado por __|>__.
 A grande diferença é que o pipe pega o resultado da esquerda e passa para a direita:
 
 ```
@@ -155,7 +155,7 @@ Calculadora.faz_operacao(20, 10, :subtracao) |> IO. puts
 ```
 
 Em linguagens funcionais como a Elixir o uso do condicional if é menos comum que outras linguagens.
-Podemos continuar explorando exemplos maiores como o cálculo de Fibonnaci:
+Podemos continuar explorando exemplos maiores como o cálculo de Fibonnacci:
 
 ```elixir
 defmodule Calculadora do
@@ -201,7 +201,7 @@ para escrever código. Em outras palavras podemos dizer que é a capacidade de g
 tempo de execução.
 
 Para entender esse conceito é necessário a compreensão de como as expressões são representadas.
-Em Elixir, a árvore de sintaxe abstradta(AST), que é a representação interna do nosso código, é representada por tuplas.
+Em Elixir, a árvore de sintaxe abstrata(AST), que é a representação interna do nosso código, é representada por tuplas.
 Essas tuplas contêm três partes:
 
 1) Nome da função
@@ -296,14 +296,14 @@ Resultado de 2*5: 10
 10
 ```
 
-Busca-se portando uma emplementação que quando a chamada __Calculadora.debug(1+2)__, o bytecode gerado corresponda
+Busca-se portando uma implementação que quando a chamada __Calculadora.debug(1+2)__, o bytecode gerado corresponda
 a alguma coisa como:
 
 ```elixir
 resultado = 1+2
 Calculadora.print("1+2", resultado)
 resultado
-````
+```
 Vamos analisar como essa Macro pode ser implementada :
 
 ```elixir
@@ -325,7 +325,7 @@ end
 
 ```
 
-É importante ter em mente que  argumento enviado a uma macro já são `quoted`.
+É importante ter em mente que os argumentos enviados a uma macro já são `quoted`.
 Então quando é chamado ``` Calculadora.debug(1+2)```, a macro __debug__ que é um função não irá receber __3__.
 Em vez disso, receberia: ```quote do: 1+2```que relembrando é a tupla:
 
