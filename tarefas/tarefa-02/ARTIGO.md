@@ -134,7 +134,7 @@ end
 Calculadora.faz_operacao(20,10, :soma) |> IO.puts
 Calculadora.faz_operacao(20, 10, :subtracao) |> IO. puts
 ```
-No exemplo usa-se o tipo __Átomo__ que é similar aos __símbolos__ no Ruby.
+No exemplo usa-se :soma, que é o tipo __Átomo__ que é similar aos __símbolos__ no Ruby.
 A grosso modo pode-se encarar como uma constante cujo o nome é seu valor.
 
 Usando o conhecimento de Pattern Matching  podemos reescrever o código acima como o a seguir:
@@ -201,7 +201,7 @@ para escrever código. Em outras palavras podemos dizer que é a capacidade de g
 tempo de execução.
 
 Para entender esse conceito é necessário a compreensão de como as expressões são representadas.
-Em Elixir, a árvore de sintaxe abstradta(AST), que é a representação interna do nosso código, é composta de tuplas.
+Em Elixir, a árvore de sintaxe abstradta(AST), que é a representação interna do nosso código, é representada por tuplas.
 Essas tuplas contêm três partes:
 
 1) Nome da função
@@ -249,7 +249,7 @@ iex(9)> quote do: {"Elixir",:funcional}
  
 Entendido a estrutura interna do código para modificá-lo e injetar um novo valor usa-se a função __unquote__.
 A proposta dessa função é receber uma expressão e imediatamente avaliar e inserir o código no lugar da chamada dela.
-Em algumas linguagens como __Python__ o nome dela é __eval()_.
+Em algumas linguagens como __Python__ o nome dela é __eval()__.
 
 
 Observe o exemplo:
