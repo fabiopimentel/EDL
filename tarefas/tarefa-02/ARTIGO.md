@@ -134,7 +134,7 @@ end
 Calculadora.faz_operacao(20,10, :soma) |> IO.puts
 Calculadora.faz_operacao(20, 10, :subtracao) |> IO. puts
 ```
-No exemplo usa-se o tipo átomo que é similar aos símbolos no Ruby.
+No exemplo usa-se o tipo __Átomo__ que é similar aos __símbolos__ no Ruby.
 A grosso modo pode-se encarar como uma constante cujo o nome é seu valor.
 
 Usando o conhecimento de Pattern Matching  podemos reescrever o código acima como o a seguir:
@@ -142,7 +142,7 @@ Usando o conhecimento de Pattern Matching  podemos reescrever o código acima co
 ```elixir
 defmodule Calculadora do
 	def faz_operacao(a,b, :soma) do
- 			a + b
+ 		a + b
 	end
 
 	def faz_operacao(a,b, :subtracao) do
@@ -175,7 +175,7 @@ end
 
 2 |> Calculadora.fibonnacci |> IO.puts
 5 |> Calculadora.fibonnacci |> IO.puts
-11 |> Calculadora.fibonnacci |> IO.puts
+11|> Calculadora.fibonnacci |> IO.puts
 ```
 
 Pode-se escrever menos quando só temos um linha no corpo de uma função:
