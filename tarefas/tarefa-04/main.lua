@@ -16,7 +16,7 @@ local aviao_14bis={
 
 }
 
-local function detroi_14bis()
+local function destroi_14bis()
 
 	destruicao:play()
 
@@ -162,7 +162,7 @@ end
 local function checa_colisoes()
 		
 	if tem_colisao_com_aviao14bis() then
-		detroi_14bis()
+		destroi_14bis()
 		troca_musica_do_jogo_para("FIM")
 		FIM_JOGO = true
 	end	
