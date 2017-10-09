@@ -16,7 +16,5 @@ Fabios-MacBook-Pro:tarefa-03 fabiopimentel$ ../love.app/Contents/MacOS/love .
 
 ```
 
-Resultado
----
-![Gif da tela](https://www.dropbox.com/s/v6kk4rfpugm4dh6/execucao.gif)   
+![Resultado](https://github.com/fabiopimentel/EDL/blob/master/tarefas/tarefa-03/resultado.gif)   
 
