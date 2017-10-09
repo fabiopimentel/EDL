@@ -3,7 +3,7 @@
 14bis vs 100 Meteóros
 ---
 
-O objetivo é destruir 100 meteóros antes de morrer.
+O objetivo é destruir 100 meteoros antes de morrer.
 Os comandos usados no jogo são:
 
 1. A/W/S/D -> Mover o avião

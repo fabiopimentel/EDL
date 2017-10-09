@@ -179,7 +179,7 @@ end
 function love.load()
 
 	love.window.setMode(320, 480, {resizable=false})
-	love.window.setTitle("14bis vs 100 meteóros")
+	love.window.setTitle("14bis vs 100 meteoros")
 
 	math.randomseed(os.time())
 
