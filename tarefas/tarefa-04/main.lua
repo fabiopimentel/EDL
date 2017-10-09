@@ -151,7 +151,7 @@ end
 local function troca_musica_do_jogo_para(razao)
 	music:stop()
 
-	if razao == "FIM JOGO" then
+	if razao == "FIM" then
 		game_over:play()
 	elseif razao == "VENCEDOR" then
 		winner:play()
