@@ -240,7 +240,7 @@ function love.draw()
 	end
 		
 	love.graphics.draw(aviao_14bis["img"], aviao_14bis["x"], aviao_14bis["y"])
-	love.graphics.print("Meteóros abatidos: ".. METEOROS_ABATIDOS, 0, 10)
+	love.graphics.print("Meteoros abatidos: ".. METEOROS_ABATIDOS, 0, 10)
 
 	if FIM_JOGO then
 		love.graphics.draw(gameover_img,LARGURA_TELA/2-100,ALTURA_TELA/2-100)
