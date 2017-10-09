@@ -3,3 +3,4 @@ Sergio/
 .*.swp
 .*.swo
 elm-stuff/
+.DS_Store
