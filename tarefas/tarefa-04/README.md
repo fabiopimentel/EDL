@@ -1,6 +1,6 @@
 # Tarefa 004
 
-14bis vs 100 Meteóros
+14bis vs 100 Meteoros
 ---
 
 O objetivo é destruir 100 meteoros antes de morrer.
