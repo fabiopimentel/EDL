@@ -64,7 +64,7 @@ end
 -- Tarefa 06
 -- Table sendo usado como um Array
 -- que é manipulado tanto nas funções criaMeteoro()
--- quanto no removeMeteoro
+-- quanto na removeMeteoro()
 meteoros = {}
 
 function removeMeteoros()
